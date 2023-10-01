@@ -12,22 +12,22 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    // Future.delayed(const Duration(seconds: 1), (() {
-    //  // Get.offAll(LoginPage());
-    // }));
+    Future.delayed(const Duration(seconds: 1), (() {
+      Get.offAll(LoginPage());
+    }));
     return Scaffold(
-        // body: Container(
-        //   width: Get.width,
-        //   height: Get.height,
-        //   child: Center(
-        //     child: Container(
-        //       decoration: BoxDecoration(
-        //           image: DecorationImage(
-        //               image: AssetImage('assets/images/bellboylogo.png'),
-        //               scale: 1)),
-        //     ),
-        //   ),
-        // ),
-        );
+      body: Container(
+        width: Get.width,
+        height: Get.height,
+        child: Center(
+          child: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/bellboylogo.png'),
+                    scale: 1)),
+          ),
+        ),
+      ),
+    );
   }
 }
